@@ -4,6 +4,7 @@ import com.fcm.simpleblog.domain.member.Member
 import com.fcm.simpleblog.domain.member.MemberSaveReq
 import com.fcm.simpleblog.service.MemberService
 import com.fcm.simpleblog.util.CmResDto
+import jakarta.validation.Valid
 import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
@@ -31,7 +32,7 @@ class MemberController(
     }
 
     @PostMapping("/member")
-    fun save(@RequestBody dto:MemberSaveReq): CmResDto<*> {
+    fun save(@Valid @RequestBody dto:MemberSaveReq): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "save member", memberService.saveMember(dto))
     }
 }

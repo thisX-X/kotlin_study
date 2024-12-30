@@ -1,5 +1,7 @@
 package com.fcm.simpleblog.domain.member
 
+import jakarta.validation.constraints.NotNull
+
 /**
  * dto <-> entity 간의 매핑에서 2가지 스타일이 존재
  * 1. 각 dto, entity에 책임 할당
@@ -7,16 +9,17 @@ package com.fcm.simpleblog.domain.member
  */
 
 data class MemberSaveReq(
-    val email: String,
-    val password: String,
-    val role: Role
+    @field:NotNull(message = "require email")
+    val email: String?,
+    val password: String?,
+    val role: Role?
 )
 
 fun MemberSaveReq.toEntity(): Member{
     return Member(
-        email = this.email,
-        password = this.password,
-        role = this.role,
+        email = this.email ?: "",
+        password = this.password ?: "",
+        role = this.role ?: Role.USER,
     )
 }
 
