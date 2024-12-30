@@ -1,6 +1,7 @@
 package com.fcm.simpleblog.service
 
 import com.fcm.simpleblog.domain.member.*
+import com.fcm.simpleblog.exception.MemberNotFoundException
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
@@ -32,7 +33,9 @@ class MemberService(
 
     @Transactional(readOnly = true)
     fun findMemberById(id: Long): MemberRes {
-        return memberRepository.findById(id).orElseThrow().toDto()
+        return memberRepository.findById(id).orElseThrow{
+            throw MemberNotFoundException(id)
+        }.toDto()
     }
 
 

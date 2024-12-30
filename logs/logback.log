@@ -20677,3 +20677,154 @@ Consider defining a bean of type 'com.linecorp.kotlinjdsl.spring.data.SpringData
  HikariPool-1 - Shutdown initiated... 
 [2024-12-30 12:37:15:67414][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown completed. 
+[2024-12-30 16:52:47:220][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2024-12-30 16:52:47:237][main] [32m INFO[0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStarting[0;39m 
+ Starting SimpleBlogApplicationKt using Java 21.0.3 with PID 12223 (/Users/hyeon/developer/kotlinStudy/simple-blog/build/classes/kotlin/main started by hyeon in /Users/hyeon/developer/kotlinStudy/simple-blog) 
+[2024-12-30 16:52:47:237][main] [32m INFO[0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStartupProfileInfo[0;39m 
+ No active profile set, falling back to 1 default profile: "default" 
+[2024-12-30 16:52:47:634][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2024-12-30 16:52:47:656][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces. 
+[2024-12-30 16:52:47:927][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2024-12-30 16:52:47:932][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2024-12-30 16:52:47:932][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2024-12-30 16:52:47:932][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2024-12-30 16:52:47:950][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2024-12-30 16:52:47:950][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 698 ms 
+[2024-12-30 16:52:47:1056][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2024-12-30 16:52:47:1075][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2024-12-30 16:52:48:1088][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2024-12-30 16:52:48:1207][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2024-12-30 16:52:48:1220][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2024-12-30 16:52:48:1248][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection org.mariadb.jdbc.Connection@47374fa5 
+[2024-12-30 16:52:48:1248][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2024-12-30 16:52:48:1270][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2024-12-30 16:52:48:1605][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2024-12-30 16:52:48:1648][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2024-12-30 16:52:49:2306][main] [32m INFO[0;39m o.s.b.a.e.web.EndpointLinksResolver [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2024-12-30 16:52:49:2335][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2024-12-30 16:52:49:2340][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2024-12-30 16:52:49:2346][main] [32m INFO[0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStarted[0;39m 
+ Started SimpleBlogApplicationKt in 2.296 seconds (process running for 2.548) 
+[2024-12-30 16:52:49:2536][RMI TCP Connection(1)-192.168.43.122] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2024-12-30 16:52:49:2536][RMI TCP Connection(1)-192.168.43.122] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2024-12-30 16:52:49:2538][RMI TCP Connection(1)-192.168.43.122] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 0 ms 
+[2024-12-30 17:02:11:564088][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2024-12-30 17:02:11:564090][tomcat-shutdown] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2024-12-30 17:02:11:564093][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2024-12-30 17:02:11:564094][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2024-12-30 17:02:11:564097][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2024-12-30 17:05:37:226][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2024-12-30 17:05:37:241][main] [32m INFO[0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStarting[0;39m 
+ Starting SimpleBlogApplicationKt using Java 21.0.3 with PID 12850 (/Users/hyeon/developer/kotlinStudy/simple-blog/build/classes/kotlin/main started by hyeon in /Users/hyeon/developer/kotlinStudy/simple-blog) 
+[2024-12-30 17:05:37:242][main] [32m INFO[0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStartupProfileInfo[0;39m 
+ No active profile set, falling back to 1 default profile: "default" 
+[2024-12-30 17:05:37:637][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2024-12-30 17:05:37:660][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces. 
+[2024-12-30 17:05:37:938][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2024-12-30 17:05:37:944][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2024-12-30 17:05:37:945][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2024-12-30 17:05:37:945][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2024-12-30 17:05:37:966][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2024-12-30 17:05:37:967][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 709 ms 
+[2024-12-30 17:05:38:1092][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2024-12-30 17:05:38:1112][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2024-12-30 17:05:38:1123][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2024-12-30 17:05:38:1238][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2024-12-30 17:05:38:1250][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2024-12-30 17:05:38:1276][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection org.mariadb.jdbc.Connection@45cf0c15 
+[2024-12-30 17:05:38:1276][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2024-12-30 17:05:38:1297][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2024-12-30 17:05:38:1659][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2024-12-30 17:05:38:1678][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2024-12-30 17:05:39:2323][main] [32m INFO[0;39m o.s.b.a.e.web.EndpointLinksResolver [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2024-12-30 17:05:39:2351][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2024-12-30 17:05:39:2356][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2024-12-30 17:05:39:2362][main] [32m INFO[0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStarted[0;39m 
+ Started SimpleBlogApplicationKt in 2.296 seconds (process running for 2.593) 
+[2024-12-30 17:05:39:2493][RMI TCP Connection(3)-192.168.43.122] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2024-12-30 17:05:39:2493][RMI TCP Connection(3)-192.168.43.122] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2024-12-30 17:05:39:2494][RMI TCP Connection(3)-192.168.43.122] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2024-12-30 17:10:14:277490][http-nio-9000-exec-1] [33m WARN[0;39m o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [36mo.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier[0;39m [32mchangeProperties[0;39m 
+ Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+ 
+[2024-12-30 17:14:39:542182][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2024-12-30 17:14:39:542183][tomcat-shutdown] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2024-12-30 17:14:39:542185][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2024-12-30 17:14:39:542186][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2024-12-30 17:14:39:542188][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 

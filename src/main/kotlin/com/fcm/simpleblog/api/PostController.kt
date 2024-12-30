@@ -3,6 +3,7 @@ package com.fcm.simpleblog.api
 import com.fcm.simpleblog.domain.post.PostSaveReq
 import com.fcm.simpleblog.service.PostService
 import com.fcm.simpleblog.util.CmResDto
+import jakarta.validation.Valid
 import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
@@ -34,7 +35,7 @@ class PostController(
     }
 
     @PostMapping("/posts")
-    fun save(@RequestBody dto: PostSaveReq): CmResDto<*> {
+    fun save(@Valid @RequestBody dto: PostSaveReq): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "save post", postService.savePost(dto))
     }
 
