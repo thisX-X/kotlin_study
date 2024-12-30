@@ -5,12 +5,13 @@ import com.linecorp.kotlinjdsl.querydsl.expression.column
 import com.linecorp.kotlinjdsl.spring.data.SpringDataQueryFactory
 import com.linecorp.kotlinjdsl.spring.data.listQuery
 import mu.KotlinLogging
-import org.hibernate.query.results.Builders.entity
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.support.PageableExecutionUtils
+import org.springframework.stereotype.Repository
 
+@Repository
 interface MemberRepository : JpaRepository<Member, Long>, MemberCustomRepository {
 
 }
@@ -21,9 +22,8 @@ interface MemberCustomRepository {
 
 class MemberCustomRepositoryImpl(
     private val queryFactory: SpringDataQueryFactory,
-):MemberCustomRepository {
+) : MemberCustomRepository {
 
-    val log = KotlinLogging.logger {}
 
     override fun findMembers(pageable: Pageable): Page<Member> {
         val results =  queryFactory.listQuery {

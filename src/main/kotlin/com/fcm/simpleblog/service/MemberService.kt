@@ -1,9 +1,6 @@
 package com.fcm.simpleblog.service
 
-import com.fcm.simpleblog.domain.member.Member
-import com.fcm.simpleblog.domain.member.MemberRepository
-import com.fcm.simpleblog.domain.member.MemberRes
-import com.fcm.simpleblog.domain.member.toDto
+import com.fcm.simpleblog.domain.member.*
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
@@ -19,6 +16,24 @@ class MemberService(
         memberRepository.findMembers(pageable).map {
             it.toDto()
         }
+
+
+    @Transactional
+    fun saveMember(dto: MemberSaveReq): MemberRes {
+
+        return memberRepository.save(dto.toEntity()).toDto()
+
+    }
+
+    @Transactional
+    fun deleteMember(id: Long) {
+        return memberRepository.deleteById(id)
+    }
+
+    @Transactional(readOnly = true)
+    fun findMemberById(id: Long): MemberRes {
+        return memberRepository.findById(id).orElseThrow().toDto()
+    }
 
 
 }

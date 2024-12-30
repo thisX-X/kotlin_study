@@ -1,11 +1,16 @@
 package com.fcm.simpleblog.api
 
+import com.fcm.simpleblog.domain.post.PostSaveReq
 import com.fcm.simpleblog.service.PostService
 import com.fcm.simpleblog.util.CmResDto
 import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
+import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -16,6 +21,21 @@ class PostController(
     @GetMapping("/posts")
     fun findPosts(@PageableDefault(size = 10) pageable: Pageable): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "find Posts", postService.findPosts(pageable))
+    }
+
+    @GetMapping("/posts/{id}")
+    fun findById(@PathVariable id: Long): CmResDto<Any> {
+        return CmResDto(HttpStatus.OK, "find post by id", postService.findPostById(id))
+    }
+
+    @DeleteMapping("/posts/{id}")
+    fun deleteById(@PathVariable id: Long): CmResDto<Any> {
+        return CmResDto(HttpStatus.OK, "delete post by id", postService.deletePost(id))
+    }
+
+    @PostMapping("/posts")
+    fun save(@RequestBody dto: PostSaveReq): CmResDto<*> {
+        return CmResDto(HttpStatus.OK, "save post", postService.savePost(dto))
     }
 
 }

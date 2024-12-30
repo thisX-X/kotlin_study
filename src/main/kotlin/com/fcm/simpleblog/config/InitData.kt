@@ -10,6 +10,7 @@ import mu.KotlinLogging
 import org.springframework.boot.context.event.ApplicationReadyEvent
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.event.EventListener
+import org.springframework.transaction.annotation.Transactional
 
 @Configuration
 class InitData(
