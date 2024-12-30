@@ -15565,3 +15565,474 @@ Caused by: java.sql.SQLSyntaxErrorException: (conn=471) Data too long for column
  HikariPool-1 - Shutdown initiated... 
 [2024-12-29 17:10:35:39513][SpringApplicationShutdownHook] [32mINFO [0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown completed. 
+[2024-12-29 21:53:25:251][background-preinit] [32mINFO [0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2024-12-29 21:53:25:270][main] [32mINFO [0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStarting[0;39m 
+ Starting SimpleBlogApplicationKt using Java 21.0.3 with PID 3441 (/Users/hyeon/developer/kotlinStudy/simple-blog/build/classes/kotlin/main started by hyeon in /Users/hyeon/developer/kotlinStudy/simple-blog) 
+[2024-12-29 21:53:25:271][main] [32mINFO [0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStartupProfileInfo[0;39m 
+ No active profile set, falling back to 1 default profile: "default" 
+[2024-12-29 21:53:25:559][main] [32mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2024-12-29 21:53:25:578][main] [32mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces. 
+[2024-12-29 21:53:25:797][main] [32mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2024-12-29 21:53:25:803][main] [32mINFO [0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2024-12-29 21:53:25:803][main] [32mINFO [0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2024-12-29 21:53:25:803][main] [32mINFO [0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2024-12-29 21:53:25:820][main] [32mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2024-12-29 21:53:25:821][main] [32mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 531 ms 
+[2024-12-29 21:53:25:872][main] [32mINFO [0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2024-12-29 21:53:25:897][main] [32mINFO [0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2024-12-29 21:53:25:909][main] [32mINFO [0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2024-12-29 21:53:26:1019][main] [32mINFO [0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2024-12-29 21:53:26:1031][main] [32mINFO [0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2024-12-29 21:53:26:1071][main] [32mINFO [0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection org.mariadb.jdbc.Connection@126254ec 
+[2024-12-29 21:53:26:1072][main] [32mINFO [0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2024-12-29 21:53:26:1098][main] [32mINFO [0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2024-12-29 21:53:26:1435][main] [32mINFO [0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2024-12-29 21:53:26:1724][main] [32mINFO [0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2024-12-29 21:53:27:2212][main] [32mINFO [0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2024-12-29 21:53:27:2217][main] [32mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2024-12-29 21:53:27:2220][main] [32mINFO [0;39m c.f.s.SimpleBlogApplicationKt [36mc.f.s.SimpleBlogApplicationKt[0;39m [32mlogStarted[0;39m 
+ Started SimpleBlogApplicationKt in 2.152 seconds (process running for 2.415) 
+[2024-12-29 21:53:27:2222][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='belkis.adams.do@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2222][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='kia.deckow.esq@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2222][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='freddy.wyman@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='miss.brenna.jast@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='consuelo.bernier.jr@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='selena.boehm@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='cameron.harber@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='sebastian.hamill@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ms.bryan.krajcik@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='amb.josephine.marquardt@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='queenie.boyle.dc@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='emelina.hansen@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2223][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='timothy.connelly.i@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='otha.lebsack.phd@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mckinley.wunsch.md@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='donny.langworth@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='louis.brekke@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mr.sylvester.dach@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='tammera.ondricka@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='homer.dietrich@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='bertram.reinger.sr@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dion.king@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='carrie.marquardt@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='brain.franecki@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2224][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='lekisha.hayes.v@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jacqulyn.runolfsdottir@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='inge.wisozk.vm@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='olga.braun.ii@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='granville.o'conner@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='marshall.stracke.esq@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='karl.marvin@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dahlia.casper.dvm@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='calvin.altenwerth@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='hilde.cormier@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rikki.volkman@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2225][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='judi.ernser@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='darcey.boyer@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='owen.padberg.v@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ulysses.lubowitz.iii@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='stephane.dubuque@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='melvin.gutkowski@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='joe.wintheiser@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='louvenia.conroy@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='nakia.gerhold.cpa@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2226][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='latrice.hessel@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='vicente.glover@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='candy.dicki.cpa@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='donny.abbott@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rocco.berge@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='cyrus.rice.v@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='juliane.romaguera.dvm@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rev.louanne.kassulke@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='msgr.george.feil@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='manuel.bernhard.lld@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='donovan.howell@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='prof.kerry.o'keefe@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2227][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='roger.sawayn@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2228][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='richard.emmerich@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2228][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='msgr.galen.ziemann@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2228][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='alethea.conroy@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2228][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='young.upton.jr@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2228][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='lavern.hegmann@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2228][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='piedad.tromp@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='gregoria.beatty@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rev.alica.hamill@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='cayla.cremin@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='hellen.cummerata@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='micheal.powlowski@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='beth.adams.esq@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ms.genevieve.mann@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='marlene.stark@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='nichelle.wehner@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dr.natividad.purdy@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='pres.lindsay.stanton@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='tomas.grady@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='carter.kuhlman.jd@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2229][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='leroy.wiegand.esq@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='moshe.block.esq@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='joesph.koch@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='bradford.sporer@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='marth.stehr@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='miss.season.fritsch@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='duane.mcglynn@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='neville.ratke.v@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='cornelius.romaguera@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='timothy.stiedemann@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='werner.kuvalis@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jerold.dietrich@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='shayna.durgan@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rodrick.hickle@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='riley.rippin.dc@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='anthony.fadel@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2230][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rev.zola.pagac@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='katelyn.schinner.dc@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='willis.armstrong@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='olen.bogan@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='serita.kris@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='pamella.fahey@hotmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='kaylene.treutel@yahoo.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2231][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ed.sporer@gmail.com', password='1234', role=USER) 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2cef4321 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@29c471f6 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6859f102 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@424769f2 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@1467dcd0 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@1ea6446b 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@39d0775c 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@40a1916d 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6a8a54f5 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@4623c0d3 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7c7335dc 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3095e9c6 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@8802edd 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@50fd4246 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@35c55050 
+[2024-12-29 21:53:27:2304][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2a0154f7 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@237e61ac 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@19abe8f7 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6f36c42 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@26753687 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@765650e4 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@307cf289 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2df019b8 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@223ed38f 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@66ab765c 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@319428ba 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@1c04dae9 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@4872d04d 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@75564689 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@65977161 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@5f7e2ca8 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@1d07fb2 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@46f5030f 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@18b77ec9 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@36821a1b 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@34adce96 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@5a2e4e77 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@794c22cd 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@5fb8ad3d 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@5bb0122 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2d4eba14 
+[2024-12-29 21:53:27:2305][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@358caf3a 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2fc72df3 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@72288b38 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2aee0173 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7acb8e6b 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6c758c74 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@5a32ab89 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@8dcc25 
+[2024-12-29 21:53:27:2306][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2693b289 
+[2024-12-29 21:53:27:2308][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@66c58c03 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@29e40db1 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@47e6004c 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7c5ae5c3 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@36b5dbdf 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3f35d13d 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@482652f7 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@63f9c2cd 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7b0a864e 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6a271c2b 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@106c4a72 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3d2e1d18 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@12b9d405 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@402d443d 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@32e0b990 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7f6ba409 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@232e4e1d 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@988eae9 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3e93ee71 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@1cfa5e46 
+[2024-12-29 21:53:27:2309][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@4df5b562 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3e4d197 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@222557fc 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6c633590 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@c5dc3db 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2910c3ae 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2182ebc7 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@543895d2 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3699c795 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@193b6f5b 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2fd16368 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3fd7f545 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@470a2845 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@589c648 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@21e72fb2 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@219a9b16 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@3744c760 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7cb4fc46 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@64b6d6dd 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@1181a376 
+[2024-12-29 21:53:27:2310][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@ef09e1 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@5b628376 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@930b6f9 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@15363eba 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@6d6e8dfc 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2258ca14 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@2e5337d8 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@ab40f46 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@13ac7281 
+[2024-12-29 21:53:27:2311][main] [32mINFO [0;39m com.fcm.simpleblog.config.InitData [36mc.f.s.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.fcm.simpleblog.domain.post.Post@7740028a 
+[2024-12-29 21:53:51:26860][http-nio-9000-exec-1] [32mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2024-12-29 21:53:51:26860][http-nio-9000-exec-1] [32mINFO [0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2024-12-29 21:53:51:26860][http-nio-9000-exec-1] [32mINFO [0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 0 ms 
+[2024-12-29 22:13:36:1211137][SpringApplicationShutdownHook] [32mINFO [0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2024-12-29 22:13:36:1211141][tomcat-shutdown] [32mINFO [0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2024-12-29 22:13:36:1211143][SpringApplicationShutdownHook] [32mINFO [0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2024-12-29 22:13:36:1211144][SpringApplicationShutdownHook] [32mINFO [0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2024-12-29 22:13:36:1211145][SpringApplicationShutdownHook] [32mINFO [0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 

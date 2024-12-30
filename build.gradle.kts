@@ -42,6 +42,7 @@ dependencies {
     implementation("io.github.serpro69:kotlin-faker:1.11.0")
     implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0")
     implementation("io.github.microutils:kotlin-logging:2.1.23")
+    implementation("com.linecorp.kotlin-jdsl:spring-data-kotlin-jdsl-starter:2.2.1.RELEASE")
 }
 
 tasks.test {

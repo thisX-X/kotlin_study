@@ -1,6 +1,7 @@
 package com.fcm.simpleblog.domain.post
 
 import com.fcm.simpleblog.domain.member.Member
+import com.fcm.simpleblog.domain.member.MemberRes
 
 data class PostSaveReq (
     val title: String,
@@ -20,5 +21,5 @@ data class PostRes (
     val id: Long,
     val title: String,
     val content: String,
-    val memberId: Long
+    val member: MemberRes
 )
