@@ -34,7 +34,7 @@ class MemberService(
     @Transactional(readOnly = true)
     fun findMemberById(id: Long): MemberRes {
         return memberRepository.findById(id).orElseThrow{
-            throw MemberNotFoundException(id)
+            throw MemberNotFoundException(id.toString())
         }.toDto()
     }
 

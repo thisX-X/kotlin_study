@@ -8,14 +8,14 @@ import jakarta.validation.constraints.NotNull
  * 2. entitymapper 인터페이스 또는 클래스를 만들어서 역할을 담당하게 지정
  */
 
-data class MemberSaveReq(
+data class LoginDto(
     @field:NotNull(message = "require email")
     val email: String?,
     val password: String?,
     val role: Role?
 )
 
-fun MemberSaveReq.toEntity(): Member{
+fun LoginDto.toEntity(): Member{
     return Member(
         email = this.email ?: "",
         password = this.password ?: "",
