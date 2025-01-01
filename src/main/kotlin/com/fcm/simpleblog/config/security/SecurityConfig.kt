@@ -1,6 +1,8 @@
 package com.fcm.simpleblog.config.security
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.fcm.simpleblog.domain.member.MemberRepository
+import org.springframework.boot.web.servlet.FilterRegistrationBean
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.authentication.AuthenticationManager
@@ -10,6 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.authentication.AuthenticationFilter
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
@@ -20,6 +23,7 @@ import org.springframework.web.cors.CorsConfigurationSource
 class SecurityConfig(
     private val authenticationConfiguration: AuthenticationConfiguration,
     private val objectMapper: ObjectMapper,
+    private val memberRepository: MemberRepository
 ) {
 
     @Bean
@@ -30,8 +34,17 @@ class SecurityConfig(
             .logout { it.disable() } // 로그아웃 비활성화 (선택 사항)
             .cors { it.configurationSource(corsConfigurationSource()) } // CORS 설정
             .addFilterBefore(loginFilter(), UsernamePasswordAuthenticationFilter::class.java)
+            .addFilterBefore(authenticationFilter(), UsernamePasswordAuthenticationFilter::class.java)
 
         return http.build()
+    }
+
+    @Bean
+    fun authenticationFilter(): CustomBasicAuthenticationFilter {
+        return CustomBasicAuthenticationFilter(
+            authenticationManager = authenticationManager(),
+            memberRepository = memberRepository
+        )
     }
 
     @Bean

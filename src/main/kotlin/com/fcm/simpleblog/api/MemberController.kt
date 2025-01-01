@@ -1,7 +1,7 @@
 package com.fcm.simpleblog.api
 
+import com.fcm.simpleblog.domain.member.LoginDto
 import com.fcm.simpleblog.domain.member.Member
-import com.fcm.simpleblog.domain.member.MemberSaveReq
 import com.fcm.simpleblog.service.MemberService
 import com.fcm.simpleblog.util.CmResDto
 import jakarta.servlet.http.HttpSession
@@ -34,7 +34,7 @@ class MemberController(
     }
 
     @PostMapping("/member")
-    fun save(@Valid @RequestBody dto:MemberSaveReq): CmResDto<*> {
+    fun save(@Valid @RequestBody dto: LoginDto): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "save member", memberService.saveMember(dto))
     }
 }

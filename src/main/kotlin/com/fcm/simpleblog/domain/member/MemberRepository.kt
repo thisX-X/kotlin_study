@@ -14,7 +14,6 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface MemberRepository : JpaRepository<Member, Long>, MemberCustomRepository {
-    abstract fun findMemberByEmail(email: String?)
 
 }
 
