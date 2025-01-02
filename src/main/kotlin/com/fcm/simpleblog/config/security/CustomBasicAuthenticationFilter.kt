@@ -25,6 +25,7 @@ class CustomBasicAuthenticationFilter(
 
         val token = request.getHeader(jwtManager.jwtHeader).replace("Bearer ", "")
         if (token == null) {
+            log.info { "token이 없습니다." }
             chain.doFilter(request, response)
             return
         }
@@ -36,7 +37,7 @@ class CustomBasicAuthenticationFilter(
         val member = memberRepository.findMemberByEmail(memberEmail)
         val principalDetails = PrincipalDetails(member)
 
-        val authentication: Authentication = UsernamePasswordAuthenticationToken(principalDetails, principalDetails.password)
+        val authentication: Authentication = UsernamePasswordAuthenticationToken(principalDetails, principalDetails.password, principalDetails.authorities)
 
         SecurityContextHolder.getContext().authentication = authentication
         chain.doFilter(request, response)

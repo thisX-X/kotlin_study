@@ -23,7 +23,7 @@ class UtilTest {
 
         val encpassword = encoder.encode("1234")
 
-        log.info { encpassword }
+        log.info { "encpassword = $encpassword" }
     }
 
     @Test
